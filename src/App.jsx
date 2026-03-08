@@ -34,7 +34,7 @@ const COLORS = [
 ];
 
 const SAMPLE_CONTACTS = [
-  { id: 1, name: "Sarah Chen", email: "sarah@techventures.sg", company: "TechVentures SG", phone: "+65 9123 4567", note: "Met at TechCrunch Disrupt — interested in API partnerships", tags: ["investor", "singapore"], capturedAt: "2 hours ago", viewed: true, trust: { score: 94, companyReg: "TechVentures Pte Ltd (UEN 201912345A)", regStatus: "Active", incDate: "Mar 2019", addressMatch: true, linkedinMatch: true, emailDomainMatch: true, employees: "50-200" } },
+  { id: 1, name: "Sarah Chen", email: "sarah@techventures.sg", company: "TechVentures SG", phone: "+65 8000 1234", note: "Met at TechCrunch Disrupt — interested in API partnerships", tags: ["investor", "singapore"], capturedAt: "2 hours ago", viewed: true, trust: { score: 94, companyReg: "TechVentures Pte Ltd (UEN 201912345A)", regStatus: "Active", incDate: "Mar 2019", addressMatch: true, linkedinMatch: true, emailDomainMatch: true, employees: "50-200" } },
   { id: 2, name: "Marcus Tan", email: "marcus@grab.com", company: "Grab Holdings", phone: "+65 8234 5678", note: "Product lead, discussed enterprise card deployment", tags: ["enterprise", "product"], capturedAt: "1 day ago", viewed: true, trust: { score: 98, companyReg: "Grab Holdings Inc (NASDAQ: GRAB)", regStatus: "Active — Public", incDate: "Jun 2012", addressMatch: true, linkedinMatch: true, emailDomainMatch: true, employees: "10,000+" } },
   { id: 3, name: "Yuki Tanaka", email: "yuki@softbank.jp", company: "SoftBank Vision Fund", phone: "+81 90 1234 5678", note: "Junior partner, follow up about seed round", tags: ["investor", "japan"], capturedAt: "2 days ago", viewed: false, trust: { score: 87, companyReg: "SB Investment Advisers (UK) Ltd", regStatus: "Active", incDate: "Oct 2016", addressMatch: true, linkedinMatch: false, emailDomainMatch: true, employees: "500+" } },
   { id: 4, name: "Priya Sharma", email: "priya@flipkart.com", company: "Flipkart", phone: "+91 98765 43210", note: "VP Engineering — wants team cards for 200 people", tags: ["enterprise", "india"], capturedAt: "3 days ago", viewed: false, trust: { score: 96, companyReg: "Flipkart Internet Private Limited (CIN U51109KA2012PTC066107)", regStatus: "Active", incDate: "Sep 2012", addressMatch: true, linkedinMatch: true, emailDomainMatch: true, employees: "30,000+" } },
@@ -210,13 +210,13 @@ function CardPreview({ card, template, color, compact = false }) {
 export default function DigitalNamecardMVP() {
   const [activeTab, setActiveTab] = useState("card");
   const [card, setCard] = useState({
-    fullName: "Jo Lin",
+    fullName: "Alex Tan",
     title: "Founder & CEO",
     company: "NODA",
-    email: "jo@noda.asia",
-    phone: "+65 9123 4567",
+    email: "hello@noda.asia",
+    phone: "+65 8000 1234",
     website: "noda.asia",
-    linkedin: "linkedin.com/in/jolin",
+    linkedin: "linkedin.com/in/alextan",
     bio: "NODA — Nodes of Digital Agents. Every connection is verified, intelligent, and working for you.",
   });
   const [template, setTemplate] = useState("bold");
@@ -317,13 +317,13 @@ export default function DigitalNamecardMVP() {
                 <h3 className="font-semibold text-gray-900 mb-4">Card Details</h3>
                 <div className="space-y-3">
                   {[
-                    { key: "fullName", label: "Full Name", placeholder: "Jo Lin" },
+                    { key: "fullName", label: "Full Name", placeholder: "Alex Tan" },
                     { key: "title", label: "Title", placeholder: "Founder & CEO" },
                     { key: "company", label: "Company", placeholder: "NODA" },
-                    { key: "email", label: "Email", placeholder: "jo@noda.asia" },
-                    { key: "phone", label: "Phone", placeholder: "+65 9123 4567" },
+                    { key: "email", label: "Email", placeholder: "hello@noda.asia" },
+                    { key: "phone", label: "Phone", placeholder: "+65 8000 1234" },
                     { key: "website", label: "Website", placeholder: "noda.asia" },
-                    { key: "linkedin", label: "LinkedIn", placeholder: "linkedin.com/in/jolin" },
+                    { key: "linkedin", label: "LinkedIn", placeholder: "linkedin.com/in/alextan" },
                   ].map((field) => (
                     <div key={field.key}>
                       <label className="text-xs font-medium text-gray-500 uppercase tracking-wide">{field.label}</label>
